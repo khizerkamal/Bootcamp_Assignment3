@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 ReactDOM.render(
   <React.StrictMode>
