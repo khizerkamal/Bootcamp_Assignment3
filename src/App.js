@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Subject from './subject.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Subject subjectName='Algorithms' semester='1st' />
+      <hr/>
+      <Subject subjectName='Data Structures' semester='2nd' />
+      <hr/>
+      <Subject subjectName='React' semester='3rd' />
+      <hr/>
+      <Subject subjectName='NodeJS' semester='4th' />
     </div>
   );
 }
